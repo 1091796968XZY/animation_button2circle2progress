@@ -1,0 +1,414 @@
+# animation_button2circle2progress
+animation 动画：圆弧button变圆在变成进度条
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>colorTeam</title>
+    <style>
+        .iv-app-fault-checking-automation * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .iv-app-fault-checking-automation .content {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            background-color: #132642;
+            -moz-background-size: 100% 100%;
+            background-size: 100% 100%;
+            transition: left 0.5s;
+            -webkit-transition: left 0.5s;
+            -o-transition: left 0.5s;
+            /* Firefox */
+            /* Safari and Chrome */
+            /* Opera */
+        }
+
+        .iv-app-fault-checking-automation .content .container-fluid span {
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+            color: #ffffff;
+        }
+
+        .iv-app-fault-checking-automation .content .checked-img-car {
+            text-align: center;
+            position: relative;
+            width: 100%;
+            height: 14.07rem;
+            line-height: 14.07rem;
+            vertical-align: middle;
+            background-color: #00b3ee;
+        }
+
+        .iv-app-fault-checking-automation .content .content-title {
+            text-align: center;
+            font-size: 25px;
+            font-weight: 200;
+            letter-spacing: 6px;
+        }
+
+        .iv-app-fault-checking-automation .content .content-title .content-title-text {
+            text-align: center;
+            width: 100%;
+            height: 3rem;
+            line-height: 3rem;
+            font-size: 3rem;
+            color: #ffffff;
+            font-weight: 200;
+            vertical-align: middle;
+        }
+
+        .iv-app-fault-checking-automation .content .checked-img-car img {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .iv-app-fault-checking-automation .content .checked-img-car img.animation-pic {
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: -100%;
+            background-color: red;
+            position: absolute;
+            animation: start-scan-animation 2s linear 2s infinite normal;
+            /* Firefox: */
+            -moz-animation: start-scan-animation 2s linear 2s infinite normal;
+            /* Safari and Chrome: */
+            -webkit-animation: start-scan-animation 2s linear 2s infinite normal;
+            /* Opera: */
+            -o-animation: start-scan-animation 2s linear 2s infinite normal;
+        }
+
+        @keyframes start-scan-animation {
+            from {
+                left: -100%;
+            }
+            to {
+                left: 0;
+            }
+        }
+
+        @-moz-keyframes buttonAnimation {
+            from {
+                left: -100%;
+            }
+            to {
+                left: 0;
+            }
+        }
+
+        @-webkit-keyframes buttonAnimation {
+            from {
+                left: -100%;
+            }
+            to {
+                left: 0;
+            }
+        }
+
+        @-o-keyframes buttonAnimation {
+            from {
+                left: -100%;
+            }
+            to {
+                left: 0;
+            }
+        }
+
+        .iv-app-fault-checking-automation .content .checked-content-layout {
+            width: 100%;
+            height: 100%;
+            line-height: 100%;
+            text-align: center;
+            vertical-align: middle;
+            background-color: rgba(255, 255, 255, 0.2);
+            opacity: 0.7;
+            filter: alpha(opacity=70);
+        }
+
+        .iv-app-fault-checking-automation .content  .button-animation {
+            width: 80%;
+            height: 100px;;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 100px;
+            text-align: center;
+            border-radius: 12px;
+            margin-top:173px;
+            background-color: #08d9b0;
+
+            position: relative;
+            animation: buttonAnimation 5s linear 2s infinite normal;
+            /* Firefox: */
+            -moz-animation: buttonAnimation 5s linear 2s infinite normal;
+            /* Safari and Chrome: */
+            -webkit-animation: buttonAnimation 5s linear 2s infinite normal;
+            /* Opera: */
+            -o-animation: buttonAnimation 5s linear 2s infinite normal;
+        }
+
+        @keyframes buttonAnimation {
+            25% {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                left: 0px;
+                top: 0px
+            }
+            40% {
+                width: 1px;
+                height: 20px;
+                border-radius: 0px;
+                left: -50%;
+                top: -10%
+            }
+            40% {
+                width: 1px;
+                height: 20px;
+                border-radius: 0px;
+                left: -50%;
+                top: -10%;
+            }
+            55% {
+                width: 150%;
+                height: 20px;
+                border-radius: 0px;
+                left: -50%;
+                top: -10%;
+            }
+            56% {
+                width: 0px;
+                height: 20px;
+                border-radius: 0px;
+                left:0%;
+                top: -10%;
+            }
+            57% {
+                width: 20%;
+                height: 20px;
+                border-radius: 0px;
+                left: 25%;
+                top: -10%;
+            }
+            72% {
+                width: 20px;
+                height: 20px;
+                border-radius: 0px;
+                left: 0%;
+                top: 0%;
+            }
+            80% {
+                width: 20px;
+                height: 20px;
+                border-radius: 0px;
+                left: 0%;
+                top: 0%
+            }
+            90% {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                left: 0%;
+                top: 0%;
+            }
+            100% {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                left: 0%;
+                top: 0%;
+            }
+        }
+
+        /* Firefox */
+        @-moz-keyframes buttonAnimation {
+
+        }
+
+        /* Safari and Chrome */
+        @-webkit-keyframes buttonAnimation {
+
+        }
+
+        /* Opera */
+        @-o-keyframes buttonAnimation {
+
+        }
+
+        .iv-app-fault-checking-automation .content .checked-content-layout .check-finish-state-item .icon {
+            width: 20px;
+            height: 20px;
+            margin: auto;
+            border-radius: 50%;
+            background-color: #0d5ab1;
+            line-height: 60px;
+            vertical-align: middle;
+        }
+
+        .iv-app-fault-checking-automation .content .checked-content-layout .checked-finish-state {
+            width: 90%;
+            height: 60px;
+            margin-left: 5%;
+            line-height: 60px;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        .iv-app-fault-checking-automation .content .checked-content-layout .checked-finish-state .titleIcon {
+            width: 20px;
+            height: 20px;
+            margin: auto;
+            line-height: 3.33rem;
+            vertical-align: middle;
+            border-radius: 50%;
+            background-color: yellow;
+        }
+
+        .iv-app-fault-checking-automation .content .checked-content-layout .checked-finish-state .checked-finish-state-text {
+            display: inline-block;
+            text-align: center;
+            font-size: 30px;
+            color: #a8cff2;
+            height: 70px;;
+            line-height: 70px;
+            vertical-align: middle;
+        }
+
+        .iv-app-fault-checking-automation .content .checked-content-layout .check-finish-state-item {
+            width: 90%;
+            height: 85px;
+            margin-left: 5%;
+            line-height: 85px;
+            text-align: left;
+            margin-top: 30px;
+            border-radius: 12px;
+            background-color: rgba(255, 255, 255, 0.2);
+            opacity: 0.7;
+            filter: alpha(opacity=70);
+        }
+
+        .iv-app-fault-checking-automation .content .checked-content-layout .check-finish-state-item .check-finish-state-item-text {
+            text-align: left;
+            font-size: 25px;
+            height: 25px;
+            line-height: 25px;
+            vertical-align: middle;
+            color: #FFFFFF;
+        }
+
+        .iv-app-fault-checking-automation .content .checked-content-layout .check-finish-state-item .check-finish-state-result-text {
+            text-align: left;
+            font-size: 25px;
+            height: 25px;
+            line-height: 25px;
+            vertical-align: middle;
+            color: #FFFFFF;
+        }
+
+        .iv-app-fault-checking-automation .content .checked-content-layout .check-finish-state-item .check-finish-state-item-content {
+            display: inline-block;
+            text-align: center;
+            font-size: 25px;
+            height: 50px;
+            line-height: 50px;
+            vertical-align: middle;
+        }
+
+        @keyframes ani {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rectToCircle {
+            0% {
+                margin-left: 0px;
+                width: 400px;
+            }
+            25% {
+                margin-left: 50px;
+                width: 300px;
+            }
+            50% {
+                margin-left: 100px;
+                width: 200px;
+            }
+            75% {
+                margin-left: 150px;
+                width: 100px;
+            }
+            100% {
+                margin-left: 200px;
+                width: 0px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="iv-app-fault-checking-automation">
+    <div class="content">
+        <div class="content-title">
+            <span class="content-title-text">动画</span>
+        </div>
+        <div class="checked-img-car">
+            <img class="img-car">
+            <img class="animation-pic">
+        </div>
+
+        <div class="button-animation"></div>
+
+        <div class="checked-content-layout">
+            <div class="checked-finish-state">
+                <img class="titleIcon">
+                <span class="checked-finish-state-text" ng-click="click()">当前车况良好</span>
+            </div>
+
+
+
+            <div class="check-finish-state-item">
+                <img class="icon">
+                <div class="check-finish-state-item-content">
+                    <p class="check-finish-state-item-text">电机控制器通讯</p>
+                    <p class="check-finish-state-result-text">正常</p>
+                </div>
+            </div>
+            <div class="check-finish-state-item">
+                <img class="icon">
+                <div class="check-finish-state-item-content">
+                    <p class="check-finish-state-item-text">晴天</p>
+                    <p class="check-finish-state-result-text">OK</p>
+                </div>
+            </div>
+            <div class="check-finish-state-item">
+                <img class="icon">
+                <div class="check-finish-state-item-content">
+                    <p class="check-finish-state-item-text">哎呦，不错哦</p>
+                    <p class="check-finish-state-result-text">正常</p>
+                </div>
+            </div>
+            <div class="check-finish-state-item">
+                <img class="icon">
+                <div class="check-finish-state-item-content">
+                    <p class="check-finish-state-item-text">好样的</p>
+                    <p class="check-finish-state-result-text">正常</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
